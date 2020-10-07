@@ -1,0 +1,18 @@
+{
+  "name": "casa_de_campo",
+  "version": "0.0.1",
+  "description": "pagina Web de local ficticio Duarte",
+  "main": "index.js",
+  "scripts": {
+    "start": "node code/index.js"
+  },
+  "author": "@jheremois",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-env-file": "^0.1.8",
+    "nodemailer": "^6.4.13",
+    "pug": "^3.0.0"
+  },
+  "devDependencies": {}
+}

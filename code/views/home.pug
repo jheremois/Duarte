@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/home.css")
+        link(rel="shortcut icon", href="images/favicon.png", type="image/x-icon")
+        link(rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css")
+        title Duarte
+    body
+        #top
+            header
+                .head#perma
+                    .the_logo
+                        a(href="/").logo
+                            h1 DUA
+                            h1.h1_2 RTE
+                        button
+                            img(src="images/menu.png", alt="menu")#menu
+                    #options
+                        block options
+                            .option
+                                a(href="#top") Home
+                            .option
+                                a(href="#services") Services
+                            .option
+                                a(href="#location") Location
+                            .option
+                                a(href="#contact") Contact
+                .top_info
+                    .info
+                        hr.hrs
+                        .info_content
+                            block eslogan
+                                h1 Better and
+                                h1 faster fixes
+                        hr#hr2.end.hrs
+            block diss
+                .down_info
+                    .the_info
+                        .info_1
+                            hr.hrs
+                            h2 If you have a problem with the mechanical systems of your vehicle, do not hesitate to go to Duarte to solve it, since we have the latest analysis equipment and authentic spare parts according to the manufacturers' regulations.
+                        .info_2
+                            br
+                            h3 In the event of your car breakdown, our staff is highly qualified and ready to make everything work again. Thanks to many years of experience, the use of the latest analysis equipment and access to the necessary technical data, our specialists quickly and professionally carry out any mechanical work your vehicle requires.
+        block diss
+            section
+                #services   
+                    hr.down_tits
+                    .toper
+                        h2 Services
+                        hr.down_tits.hrs
+                    .services
+                        .service#repair.dad
+                            .dates
+                                h2 Reparing
+                                hr
+                                p We have the latest analysis equipment and authentic spare parts in accordance with the manufacturers' regulations for repair
+                        .service#wash.dad
+                            .dates
+                                h2 Washing
+                                hr
+                                p Personalized internal and external vehicle washing and quick auto detailing.
+                        .service#sales.dad
+                            .dates
+                                h2 Oil change
+                                hr
+                                p Duarte offers you a maintenance solution depending on the age of your car and the manufacturer's specifications.
+                hr.down_tits
+                #mision
+                    aside
+                        .up.dad
+                            .center
+                                img(src="images/mision.png", alt="mision")
+                    .mision            
+                        span 
+                            h1 Mision
+                            hr
+                        p Provide a good automotive maintenance service in general, keeping our clients' cars in an efficient and safe operating state, satisfying their needs and expectations in the best possible time. Knowing that you and your vehicle are the most important. We address owners, users, service companies, workshops or other entities that require the after-sales and maintenance of a car, vehicle of any make or model whose priority is the efficiency, quality, speed and performance of the repair.
+                hr.down_tits
+                #location
+                    .location
+                        .location_content
+                            h1 Location
+                            hr.down_tits
+                        #map.dad
+                        .infos
+                            .in
+                                h1 ·
+                                h2 Open 24hrs
+                            .in
+                                h1 ·
+                                h2 7 days a week
+                            .in
+                                h1 ·
+                                h2 Fast service
+                hr.down_tits
+                footer
+                    #contact
+                        form(action="/mail", method="post")
+                            hr.hrs
+                            label(for="name") Contact the creator
+                            input(type="name" name='name' id='name' placeholder='Name' required)
+                            input(type="email" name='email' id='e-mail' placeholder='e-mail' required)
+                            input(type="text" name='subject' id='subject' placeholder='subject' required)
+                            textarea(name="message", cols="30", rows="6" placeholder='Your message...' required)
+                            .send
+                                button Send mail   
+                            .send
+                                hr.hrs
+                        .social
+                            .medias
+                                a(href="https://www.linkedin.com/in/jheremy-ricardo-castro-guerrero-3a85521a0/" target='blank')
+                                    img(src="images/linkedin.svg", alt="linkedin")
+                                a(href="https://github.com/jheremois" target='blank')
+                                    img(src="images/github.svg", alt="github")
+                            .b_logo 
+                                img(src="images/favicon.png", alt="logo")
+                            .medias
+                                a(href="https://www.instagram.com/shunniat" target='blank')
+                                    img(src="images/instagram.svg", alt="instagram")
+                                a(href="https://twitter.com/jheremois" target='blank')
+                                    img(src="images/twitter.svg", alt="twitter")
+    script(src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js")
+    script(src="js/home.js")

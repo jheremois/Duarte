@@ -1,0 +1,519 @@
+@font-face{
+    font-family: sf_pro;
+    src: url(../fonts/sf.ttf) 
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    color: #f2f2f7;
+    font-family: sf_pro;
+    font-weight: 500;
+    user-select: none; 
+    transition-duration: 300ms;
+}
+*::-webkit-scrollbar{
+    width: 5px;
+    background-color: #f1f1f1bb;
+}
+*::-webkit-scrollbar-thumb{
+    border-radius: 140px;
+    background-color: #1c1c1ed3;
+}
+button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    transition-duration: 300ms;
+    background-color: #1c1c1e;
+}
+/*________________________________________________Header________________________________________________*/
+#top{
+    background-image: url('../images/top_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header .head, header .the_logo, header .the_logo .logo{
+    display: flex;
+}
+header{
+    background: #1c1c1e;
+    background: radial-gradient(circle, #1c1c1ecc 0%, #1c1c1eec 100%);
+}
+/*      .head       */
+header .head{
+    z-index: 2;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.head .the_logo{
+    justify-content: space-between;
+
+}
+.the_logo a{
+    display: flex;
+    padding: 0px 10px;
+}
+.the_logo a h1{
+    font-weight: 600;
+    font-size: 30px;
+}
+.the_logo a .h1_2{
+    color: #ff9f00;
+}
+.head .the_logo button{
+    display: none;
+    width: 45px;
+}
+.head .the_logo button img{
+    width: 100%;
+}
+.head .the_logo .logo img{
+    height: 30px;
+}
+#options{
+    width: 50%;
+    display: flex;
+}
+#options .option{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    width: 100%;
+}
+#options .option a{
+    font-size: 14pt;
+    border-bottom: solid 2px transparent;
+}
+#options .option a:hover{
+    transition-duration: 400ms;
+    color: #ff9f00;
+    border-bottom: solid 2px #ff9f00;
+}
+/*      Top info        */
+.top_info{
+    padding: 0% 2% 7% 10%;
+    height: 320px;
+    align-items: center;
+    display: flex;
+}
+hr{
+    height: 0px;
+    border: none;
+    border-top: 4.4px solid #ff9f00;
+    margin: 10px 0px;
+    transition-duration: 1000ms;
+}
+.hrs{
+    width: 0px;
+}
+.end{
+    float: right;
+}
+.info_content h1{
+    font-weight: 400;
+    font-size: 54px;
+}
+.the_info{
+    width: 100%;
+    display: flex;
+    background: #1c1c1e;
+}
+.the_info div{
+    width: 50%;
+    padding: 7% 5%;
+}
+.info_2 h3{
+    font-size: 20px;
+}
+/*________________________________________________Section________________________________________________*/
+section{
+    background-color: #f1f1f1;
+}
+/*      Services        */
+section .toper{
+    padding: 90px 70px 20px 70px;
+}
+.toper h2{
+    color: #1c1c1e;
+    font-size: 40px;
+    font-weight: 500;
+}
+.down_tits{
+    margin: 0px;
+}
+.services{
+    padding: 10px 70px 120px 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.service{
+    border-radius: 3px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 26%;
+    height: 300px;
+    box-shadow: 7px 7px 9px 0px #0000008f;
+    overflow: hidden;
+}
+#repair{
+    background-image: url('../images/repair.jpg');
+}
+#wash{
+    background-image: url('../images/wash.jpg');
+}
+#sales{
+    background-image: url('../images/sales.jpg');
+}
+.service .dates{
+    padding-top: 250px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    transition-duration: 600ms;
+}
+.service .dates h2, p{
+    display: flex;
+    justify-content: center;
+}
+.service .dates h2{
+    align-items: center;
+    height: 54px;
+    padding: 0px 20px;
+    background-color: #1c1c1eec;
+}
+.service .dates hr{
+    margin: 0px;
+}
+.service .dates p{
+    padding: 0px 15px;
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+.service .dates:hover{
+    cursor: default;
+    padding-top: 0px;
+    background-color: #1c1c1eb7;
+}
+/*          location          */
+#location{
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+}
+.location{
+    width: 80%;
+    padding: 70px 0px;
+}
+#map{
+    background-color: #1c1c1e;
+    position: relative;
+    border: #ff9f00 4px solid;
+    float: left;
+    margin: 0px 10px;
+    height: 350px;
+    width: 67%;
+}
+.location_content{
+    float: right;
+    width: 26%;
+}
+.location_content hr{
+    width: 150px;
+    margin-bottom: 20px;
+}
+.location_content h1{
+    color: #1c1c1e;
+    font-size: 40px;
+}
+.infos{
+    float: right;
+    width: 26%;
+}
+.in{
+    display: flex;
+}
+.in h1{
+    padding: 5% 0%;
+}
+.in h2{
+    padding: 7px 0px 0px 4px;
+    font-weight: 600;
+    color: #1c1c1ee5;
+    display: flex;
+    align-items: center;
+}
+.in h1{
+    color: #ff9f00;
+    font-size: 50px;
+}
+/*          mision          */
+#mision{
+    display: flex;
+    background-color: #1c1c1e;
+    padding: 90px 50px;
+}
+#mision aside{
+    padding: 2% 3% 0% 3%;
+    width: 30%;
+}
+#mision aside, #mision aside .up .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mision aside .up, #mision aside .up .center{
+    height: 170px;
+    width: 170px;
+}
+#mision aside .up{
+    border: solid 5px #f1f1f1;
+}
+#mision aside .up .center{
+    transform: translate(10px, -20px);
+    border: solid 5px #ff9f00;
+}
+#mision .center img{
+    height: 130px;
+    animation-name: pop;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+}
+@keyframes pop{
+
+    0%{
+        transform: rotateZ(0deg);
+    }
+
+    100%{
+        transform: rotateZ(360deg);
+    }
+
+}
+#mision .mision{
+    width: 70%;
+}
+#mision .mision span h1{
+    font-size: 40px;
+}
+#mision .mision span hr{
+    margin: 0px 0px 20px 0px;
+    width: 115px;
+}
+#mision .mision p{
+    font-size: 22px;
+}
+/*________________________________________________Fotter________________________________________________*/
+footer{
+    background-color: #1c1c1e;
+}
+#contact{
+    width: 80%;
+    padding: 10px 10%;
+    display: block;
+    justify-content: space-between;
+}
+#contact form{
+    padding: 40px 0px;
+    color: #1c1c1e;
+    display: grid;
+    align-items: flex-end;
+}
+#contact form label{
+    width: 100%;
+    font-size: 30px;
+    margin: 10px 0px;  
+}
+#contact form input, textarea{
+    outline: none;
+    border: none;
+    background-color: #0c0c0c;
+    font-size: 18px;
+    padding: 10px;
+    margin: 12px 0px;
+}
+textarea{
+    resize: none;
+}
+#contact form input::placeholder, textarea::placeholder{
+    color: #dbdbdbab;
+}
+#contact form .send{
+    float: right;
+}
+#contact form .send button{  
+    margin: 20px 0px;   
+    width: 120px;
+    font-size: 20px;
+    font-weight: 600;
+    height: 40px;
+    background-color: #ff9f00;
+    color: #1c1c1e;
+    cursor: pointer;
+}
+#contact form button, form hr{
+    float: right;
+}
+.social{
+    justify-content: center;
+    display: flex;
+}
+.medias, #contact .b_logo{
+    display: flex;
+    align-items: center;
+}
+.medias a{
+    margin: 20px;
+}
+.medias a img{
+    filter: invert(100%);
+    width: 25px;
+}
+.social .b_logo{
+    justify-content: center;
+}
+.b_logo img{
+    margin: 20px;
+    height: 40px;
+}
+.dad{
+    transform: scale(0.8);
+    transition-duration: 800ms;
+}
+/*________________________________________________MEDIA________________________________________________*/
+@media screen and (max-width: 768px){
+    #options{
+        width: 60%;
+    }
+    section .toper{
+        padding: 90px 20px 20px 21px;
+    }
+    .services{
+        padding: 10px 20px 120px 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .service{
+        width: 31%;
+    }
+    #mision{
+        display: block;
+        padding: 110px 30px;
+    }
+    #mision aside .up, #mision aside .up .center{
+        height: 140px;
+        width: 140px;
+    }
+    #mision .center img{
+        height: 100px;
+    }
+    #mision aside{
+        padding: 0px 0px 40px 0px;
+    }
+    #mision .mision span{
+        display: grid;
+        justify-content: center;
+    }
+    #mision aside, #mision .mision{
+        text-align: center;
+        display: grid;
+        justify-content: center;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 582px){
+    #top{
+        background-size: unset;
+    }
+    header .head{
+        display: block;
+    }
+    .head .the_logo button{
+        display: flex;
+    }
+    .head .the_logo button:active{
+        transition-duration: 400ms;
+        transform: scale(0.8);
+    }
+    #menu{
+        transition-duration: 300ms;
+    }
+    #options{
+        padding: 5px;
+        transition-duration: 300ms;
+        height: 0px;
+        overflow: hidden;
+        width: 100%;
+        display: block;
+    }
+    #options .option a{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 16px 0px;
+        font-size: 25px;
+    }
+    #options .option a:hover{border: none;}
+    .top_info{
+        padding: 0%;
+    }
+    .info{
+        overflow: hidden;
+        margin-left: 8%;
+    }
+    #hr1{
+        transform: translateX(-10px);
+    }
+    #hr2{
+        transform: translateX(10px);
+    }
+    .down_info{
+        overflow: hidden;
+        width: 100%;
+    }
+    .the_info{
+        padding: 8%;
+        display: grid;
+        justify-content: center;
+
+    }
+    .the_info div{
+        padding: 0px;
+        width: 88%;
+    }
+    .services{
+        padding: 20px 20px 80px 20px;
+        display: block;
+    }
+    .service{
+        margin: 20px;
+        width: 90%;
+    }
+    section .toper{
+        padding: 100px 30px 0px 42px;
+    }
+    #location .location{
+        width: 85%;
+        display: block;
+        
+    }
+    .location_content,.infos, .infos .in{
+        float: none;
+        width: 90%;
+    }
+    #map{
+        margin: 0px;
+        width: 100%;
+        height: 280px;
+    }
+}
