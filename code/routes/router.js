@@ -9,7 +9,9 @@ const nodemailer = require('nodemailer')
 module.exports = () => {
     
     router.get('/', (req, res)=> {
+
         res.render('home')
+        
     })
 
     router.post('/mail', async (req, res)=>{
