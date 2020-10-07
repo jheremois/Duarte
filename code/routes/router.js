@@ -29,8 +29,8 @@ module.exports = () => {
         })
 
         const mailOptions = await {
-            from: name,
-            to: process.env.MAIL_USER,
+            from: process.env.MAIL_USER,
+            to: 'jheremy802@gmail.com',
             subject: subject,
             text: `
 
