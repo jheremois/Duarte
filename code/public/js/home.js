@@ -24,23 +24,33 @@ setTimeout(() => {
 
 const menu = document.getElementById('menu')
 const options = document.getElementById('options')
-
+const inside = document.querySelectorAll('.option')
 
 const open_menu = ()=>{
 
-    if(options.style.height === '285px'){
+    if(options.style.height === '250px'){
 
         options.style.height = '0px'
 
     }
-    else if(options.style.height !== '285px'){
+    else if(options.style.height !== '250px'){
 
-        options.style.height = '285px'
+        options.style.height = '250px'
 
     }
 
 }
 
+for (let i = 0; i < inside.length; i++) {
+
+    inside[i].addEventListener('click', ()=> {
+
+        if(options.style.height === '250px')
+            options.style.height = '0px'
+
+    })
+
+}
 
 menu.addEventListener('click', ()=> open_menu())
 
@@ -114,4 +124,3 @@ L.tileLayer('http://b.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png').addTo(map)
 
 L.marker([18.4223445, -68.9697735], {icon: icon})
     .addTo(map)
-

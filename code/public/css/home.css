@@ -3,6 +3,7 @@
     src: url(../fonts/sf.ttf) 
 }
 *{
+    scroll-behavior: smooth;
     margin: 0%;
     padding: 0%;
     color: #f2f2f7;
@@ -66,6 +67,7 @@ header .head{
 .the_logo a .h1_2{
     color: #ff9f00;
 }
+#menu{display: none;}
 .head .the_logo button{
     display: none;
     width: 45px;
@@ -77,7 +79,7 @@ header .head{
     height: 30px;
 }
 #options{
-    width: 50%;
+    width: 40%;
     display: flex;
 }
 #options .option{
@@ -88,7 +90,7 @@ header .head{
     width: 100%;
 }
 #options .option a{
-    font-size: 14pt;
+    font-size: 12pt;
     border-bottom: solid 2px transparent;
 }
 #options .option a:hover{
@@ -257,32 +259,32 @@ section .toper{
     font-size: 50px;
 }
 /*          mision          */
-#mision{
+#mission{
     display: flex;
     background-color: #1c1c1e;
     padding: 90px 50px;
 }
-#mision aside{
+#mission aside{
     padding: 2% 3% 0% 3%;
     width: 30%;
 }
-#mision aside, #mision aside .up .center{
+#mission aside, #mission aside .up .center{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#mision aside .up, #mision aside .up .center{
+#mission aside .up, #mission aside .up .center{
     height: 170px;
     width: 170px;
 }
-#mision aside .up{
+#mission aside .up{
     border: solid 5px #f1f1f1;
 }
-#mision aside .up .center{
+#mission aside .up .center{
     transform: translate(10px, -20px);
     border: solid 5px #ff9f00;
 }
-#mision .center img{
+#mission .center img{
     height: 130px;
     animation-name: pop;
     animation-timing-function: linear;
@@ -300,17 +302,17 @@ section .toper{
     }
 
 }
-#mision .mision{
+#mission .mision{
     width: 70%;
 }
-#mision .mision span h1{
+#mission .mision span h1{
     font-size: 35px;
 }
-#mision .mision span hr{
+#mission .mision span hr{
     margin: 0px 0px 20px 0px;
     width: 115px;
 }
-#mision .mision p{
+#mission .mision p{
     font-size: 22px;
 }
 /*________________________________________________Fotter________________________________________________*/
@@ -406,25 +408,25 @@ textarea{
     .service{
         width: 31%;
     }
-    #mision{
+    #mission{
         display: block;
         padding: 110px 30px;
     }
-    #mision aside .up, #mision aside .up .center{
+    #mission aside .up, #mission aside .up .center{
         height: 140px;
         width: 140px;
     }
-    #mision .center img{
+    #mission .center img{
         height: 100px;
     }
-    #mision aside{
+    #mission aside{
         padding: 0px 0px 40px 0px;
     }
-    #mision .mision span{
+    #mission .mision span{
         display: grid;
         justify-content: center;
     }
-    #mision aside, #mision .mision{
+    #mission aside, #mission .mision{
         text-align: center;
         display: grid;
         justify-content: center;
@@ -446,6 +448,7 @@ textarea{
         transform: scale(0.8);
     }
     #menu{
+        display: flex;
         transition-duration: 300ms;
     }
     #options{
@@ -460,8 +463,8 @@ textarea{
         display: flex;
         justify-content: center;
         width: 100%;
-        padding: 16px 0px;
-        font-size: 25px;
+        padding: 10px 0px;
+        font-size: 15px;
     }
     #options .option a:hover{border: none;}
     .top_info{
